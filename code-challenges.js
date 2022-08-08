@@ -31,19 +31,16 @@ const temp2 = 350
 const temp3 = 212
 
 
-const boilingPoint = () => {
-    if (temp1 < 212 ){
-        console.log(temp1 + " is below boiling point");
-    }else if(temp2 > 212 ){
-        console.log(temp2 + " is above boiling point");
-    }else if (temp3 == 212 ){
-        console.log(temp3 + " is at boiling point");
-    }else{
-        console.log( "Try Again!");
-    }
-    
-}
-console.log(boilingPoint(350));
+const boilingPoint = (temp) => {
+    if (temp < 212) {
+            return `"${temp} is below boiling point"`}
+         else if (temp > 212) {
+            return `"${temp} is above boiling point"`}
+         else  (temp === 212) ;{
+            return `"${temp} is at boiling point"`}
+         }
+
+console.log(boilingPoint(temp3));
 
 
 
